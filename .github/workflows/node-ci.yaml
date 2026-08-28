@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  html-test:
+  html-check:
     runs-on: ubuntu-latest
 
     steps:
