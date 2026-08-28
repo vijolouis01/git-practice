@@ -21,3 +21,6 @@ jobs:
           echo "Actor: $GITHUB_ACTOR"
       - name: Show current directory
         run: pwd     
+
+      - name: List repository files
+        run: ls -la  
