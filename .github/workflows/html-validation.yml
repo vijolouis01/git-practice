@@ -28,6 +28,6 @@ jobs:
         run: |
           echo "Project: $PROJECT_NAME"
           echo "Envionment: $ENVIRONMENT"
-          echo "Secrete Exist: ${PRACTICE_SECRETE+YES}"
+          echo "Secret exists: ${PRACTICE_SECRET:+yes}"
         env:
           PRACTICE_SECRET: ${{ secrets.PRACTICE_SECRET }}  
