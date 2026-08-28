@@ -1,0 +1,34 @@
+name: HTML Check
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main    
+
+jobs:
+  html-check:
+    runs-on: ubuntu-latest
+
+  steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Show HTML files
+      run: |
+        echo "HTML files in the project:"
+        find . -name "*.html"
+
+    - name: Check required pages
+      run: |
+        test -f index.html
+        test -f about.html
+        test -f contact.html
+        echo "All required HTML pages exist!"
+
+    - name: Show Git status
+      run: git status  
+
+
