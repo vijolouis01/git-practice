@@ -7,6 +7,9 @@ on:
   pull_request:
     branches:
       - main
+env:
+  PROJECT_NAME: git-learning
+  ENVIRONMENT: learning      
 
 jobs:
   validate-html:
@@ -20,3 +23,11 @@ jobs:
         uses: Cyb3r-Jak3/html5validator-action@v7.2.0
         with:
           root: .
+
+      - name: Show variable & Secretes
+        run: |
+          echo "Project: $PROJECT_NAME"
+          echo "Envionment: $ENVIRONMENT"
+          echo "Secrete Exist: ${PRACTICE_SECRETE+YES}"
+        env:
+    `     PRACTICE_SECRET: ${{ secrets.PRACTICE_SECRET }}  
