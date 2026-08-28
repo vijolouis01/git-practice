@@ -1,0 +1,23 @@
+{
+  "name": "git-practice-clone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "html-validate": "^11.10.0"
+  },
+  "scripts": {
+    "test": "html-validate \"**/*.html\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vijolouis01/git-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vijolouis01/git-practice/issues"
+  },
+  "homepage": "https://github.com/vijolouis01/git-practice#readme"
+}
