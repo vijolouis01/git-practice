@@ -21,12 +21,12 @@ jobs:
           echo "HTML files in the project:"
           find . -name "*.html"
 
-    - name: Check required pages
-      run: |
-        test -f index.html
-        test -f about.html
-        test -f missing.html
-        echo "All required HTML pages exist!"
+      - name: Check required pages
+        run: |
+          test -f index.html
+          test -f about.html
+          test -f missing.html
+          echo "All required HTML pages exist!"
 
       - name: Show Git status
         run: git status
